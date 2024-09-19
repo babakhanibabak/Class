@@ -4,39 +4,47 @@ import com.example.innerClass.InnerClass
 import com.example.internal.VMInternalClass
 import com.example.sealedclass.Operation
 import com.example.nestedClass.NestedClass
+import com.example.operatorOverloading.Score
 import com.example.visibilityModifiers.VMProtectedClass
 
 
-fun main(){
-val operationAdd=Operation.Add(5)
+fun main() {
+    val operationAdd = Operation.Add(5)
     operationAdd.addOperator()
 
     //nestedClass
-    val userClass=NestedClass()
+    val userClass = NestedClass()
     userClass.showName()
     userClass.showName()
-    val userClassCity=NestedClass.City()
+    val userClassCity = NestedClass.City()
     userClassCity.showCity()
-    val userClassAge=NestedClass.Age()
+    val userClassAge = NestedClass.Age()
     userClassAge.showAge()
 
     //innerClass
-    val humanClass=InnerClass()
+    val humanClass = InnerClass()
     humanClass.showName()
     humanClass.City().showCity()
     humanClass.Age().showAge()
-      /*-------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------------------------------*/
 //protected Class
-val protectedClass=VMProtectedClass()
+    val protectedClass = VMProtectedClass()
 
 
     //internal Class
-    val internalClass= VMInternalClass()
+    val internalClass = VMInternalClass()
     internalClass.showName()
     internalClass.name
 
     /*از فراخوانی زیر چون در یک پکیج دیگر می باشد نمیتوان از آن استفاده کرد و این ویژگیinternalClass می باشد
     internalClass.InternalChild().showName2()    */
 
+    //operator over loading
+
+    val score = Score()
+    //score.plus(5)
+    score + 5
+    //score.div(4)
+    score / 4
 
 }
