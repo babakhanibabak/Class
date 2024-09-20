@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.extentionFunction.User
 import com.example.innerClass.InnerClass
 import com.example.internal.VMInternalClass
 import com.example.sealedclass.Operation
@@ -47,4 +48,19 @@ fun main() {
     //score.div(4)
     score / 4
 
+   // extension function
+    val user=User()
+    user.setValues("Babak", "Babakhani")
+    user.getValues()
+}
+
+
+// extension function
+fun User.setValues(_name: String, _family: String) {
+    name=_name
+    family=_family
+}
+
+fun User.getValues(){
+    println("$name $family")
 }
