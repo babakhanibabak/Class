@@ -61,7 +61,10 @@ fun main() {
     user55["city"]="Sanandaj"
     user55["State"]="Sanandaj"
 
-    println(user55["name"])
+    //println(user55["name"])
+    for ((key,value ) in user55){
+        println("$key-> $value")
+    }
 
 }
 
