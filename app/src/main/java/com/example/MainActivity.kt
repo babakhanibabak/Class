@@ -7,6 +7,7 @@ import com.example.sealedclass.Operation
 import com.example.nestedClass.NestedClass
 import com.example.operatorOverloading.Score
 import com.example.visibilityModifiers.VMProtectedClass
+import java.util.TreeMap
 
 
 fun main() {
@@ -52,6 +53,16 @@ fun main() {
     val user=User()
     user.setValues("Babak", "Babakhani")
     user.getValues()
+
+    //Tree Map
+    val user55= TreeMap<String, String>()
+    user55["name"]= "Babak"
+    user55["family"]="Babakhani"
+    user55["city"]="Sanandaj"
+    user55["State"]="Sanandaj"
+
+    println(user55["name"])
+
 }
 
 
