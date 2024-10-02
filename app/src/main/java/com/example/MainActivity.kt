@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.constructors.Cons1
 import com.example.extentionFunction.User
 import com.example.innerClass.InnerClass
 import com.example.internal.VMInternalClass
@@ -65,6 +66,9 @@ fun main() {
     for ((key,value ) in user55){
         println("$key-> $value")
     }
+
+    //constructor
+    val user22=Cons1("Babak" ,5)
 
 }
 
