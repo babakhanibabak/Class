@@ -19,4 +19,17 @@ println("---------------------")
         }
         println(i)
     }
+
+    println("---------------------")
+
+    // 2 for loop with break  and continue
+
+   iLoop@ for (i in 1..7){
+    jLoop@  for (j in 1..4){
+            if (j==3){
+                continue@jLoop
+            }
+        println("$i-$j")
+        }
+    }
 }
