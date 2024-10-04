@@ -13,5 +13,10 @@ fun main() {
         arrayOf(4, 5, 6),
         arrayOf(7, 8, 9)
     )
-
+    for (i in a3) {
+        for (j in i) {
+            println("$j")
+        }
+        println()
+    }
 }
