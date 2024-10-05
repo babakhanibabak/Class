@@ -22,5 +22,13 @@ fun main(){
         else -> println("b is not 1,2,3,4,5,6")
     }
 
+    //when loop for range
+    val c=5
+when(c){
+    in 1..6 -> println("c is in 1..6")
+    in 7..10 -> println("c is in 7..10")
+    else -> println("c is not < 10")
+}
+
 
 }
