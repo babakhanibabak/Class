@@ -13,4 +13,14 @@ fun main(){
 }
         else -> println("a is not 1,2,3")
     }
+
+    // when loop for 2 or more numbers
+    val b=4
+    when(b){
+        1,2,3 -> println("b is 1,2,3")
+        4,5,6 -> println("b is 4,5,6")
+        else -> println("b is not 1,2,3,4,5,6")
+    }
+
+
 }
