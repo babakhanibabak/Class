@@ -18,4 +18,10 @@ fun main(){
 
         }
     }
+    //another example
+    if (a>2){
+        for (i in 1..4){
+            println("$i")
+        }
+    }
 }
