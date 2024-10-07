@@ -27,6 +27,10 @@ fun main(){
     for (x in 10 downTo 1 step 2){
         println(x)
     }
-
+    // another example
+    val names= listOf("Babak","Foad","Hossein")
+    for (name in names){
+        println(name)
+    }
 
 }
