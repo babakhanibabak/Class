@@ -20,3 +20,14 @@ class NestedClass {
         }
     }
 }
+
+fun main(){
+    //nestedClass
+    val userClass = NestedClass()
+    userClass.showName()
+    userClass.showName()
+    val userClassCity = NestedClass.City()
+    userClassCity.showCity()
+    val userClassAge = NestedClass.Age()
+    userClassAge.showAge()
+}
