@@ -20,4 +20,18 @@ class InnerClass {
                 println("${name} Age is $age")
             }
         }
+    inner class Family{
+        val family="Babakhani"
+        fun showFamily(){
+            println("my name is $name $family ")
+        }
     }
+    }
+
+fun main(){
+    val humanClass = InnerClass()
+    humanClass.showName()
+    humanClass.City().showCity()
+    humanClass.Age().showAge()
+    humanClass.Family().showFamily()
+}
