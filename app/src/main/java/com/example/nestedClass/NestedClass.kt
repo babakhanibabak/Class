@@ -19,6 +19,14 @@ class NestedClass {
             println("Age is $age")
         }
     }
+
+    class Family{
+        val nestedClass=NestedClass().name
+        val family="Babakhani"
+        fun showFamily(){
+            println("my name is $nestedClass $family ")
+        }
+    }
 }
 
 fun main(){
@@ -26,8 +34,13 @@ fun main(){
     val userClass = NestedClass()
     userClass.showName()
     userClass.showName()
+
     val userClassCity = NestedClass.City()
     userClassCity.showCity()
+
     val userClassAge = NestedClass.Age()
     userClassAge.showAge()
+
+    val useClassFamily=NestedClass.Family()
+    useClassFamily.showFamily()
 }
