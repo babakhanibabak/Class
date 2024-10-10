@@ -6,9 +6,17 @@ open class VMProtectedClass {
         println("Name is $name")
     }
 
-    class protectedChild():VMProtectedClass(){
-        fun showName2(){
+    class ProtectedChild() : VMProtectedClass() {
+        fun showName2() {
             println(name)
         }
     }
+
+}
+
+fun main() {
+    val protectedClass = VMProtectedClass()
+    // نمیتوان ازProtectedClass آبجکت درست کرد و باید مستقیماً از عنوان کلاس استفاده کرد
+    VMProtectedClass.ProtectedChild().showName2()
+
 }
