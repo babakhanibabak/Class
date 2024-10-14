@@ -12,4 +12,15 @@ fun main(){
     val user=User()
     user.setValues("Babak", "Babakhani")
     user.getValues()
+
+    user.setValues("foad","babakhani")
+    user.getValues()
+
+    val job ="Android developer"
+    println(job.reverse())
+
+}
+
+fun String.reverse():String{
+    return this.reversed()
 }
