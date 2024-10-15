@@ -24,3 +24,12 @@ fun main(){
 fun String.reverse():String{
     return this.reversed()
 }
+
+fun User.setValues(_name: String, _family: String) {
+    name=_name
+    family=_family
+}
+
+fun User.getValues(){
+    println("$name $family")
+}
