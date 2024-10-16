@@ -14,3 +14,6 @@ fun treeMap(){
     }
 }
 
+fun main(){
+    treeMap()
+}
