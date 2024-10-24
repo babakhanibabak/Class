@@ -12,6 +12,8 @@ import java.util.TreeMap
 
 
 fun main() {
+
+    //sealed class
     val operationAdd = Operation.Add(5)
     operationAdd.addOperator()
 
@@ -30,13 +32,13 @@ fun main() {
     humanClass.City().showCity()
     humanClass.Age().showAge()
     /*-------------------------------------------------------------------------------*/
-//protected Class
+    //protected Class
     val protectedClass = VMProtectedClass()
 
 
     //internal Class
     val internalClass = VMInternalClass()
-    internalClass.showName()
+    internalClass.showName1()
     internalClass.name
 
     /*از فراخوانی زیر چون در یک پکیج دیگر می باشد نمیتوان از آن استفاده کرد و این ویژگیinternalClass می باشد
@@ -54,7 +56,8 @@ fun main() {
     val user=User()
     user.setValues("Babak", "Babakhani")
     user.getValues()
-
+//
+    println(".........................")
     //Tree Map
     val user55= TreeMap<String, String>()
     user55["name"]= "Babak"
